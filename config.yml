@@ -29,7 +29,7 @@ engine:                      # Engine settings.
     Threads: 10               # Max CPU threads the engine can use.
     Hash: 256                # Max memory (in megabytes) the engine can allocate.
     Slow Mover: 10
-    Ponder: true
+    Ponder: false
 #   go_commands:             # Additional options to pass to the UCI go command.
 #     nodes: 1               # Search so many nodes only.
 #     depth: 5               # Search depth ply only.
@@ -61,7 +61,7 @@ correspondence:
 challenge:                   # Incoming challenges.
   concurrency: 1             # Number of games to play simultaneously.
   sort_by: "best"            # Possible values: "best" and "first".
-  accept_bot: false          # Accepts challenges coming from other bots.
+  accept_bot: true           # Accepts challenges coming from other bots.
   only_bot: false            # Accept challenges by bots only.
   max_increment: 180         # Maximum amount of increment to accept a challenge. The max is 180. Set to 0 for no increment.
   min_increment: 0           # Minimum amount of increment to accept a challenge.
